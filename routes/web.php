@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [userController::class, 'index']);
+
+
+/* Utilitzant regex per validar les dades que pasen per la url
+Route::get('/user/{name}', function($name) {
+
+})->where('name', '[A-Za-z]+');
+*/
