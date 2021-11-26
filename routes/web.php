@@ -20,10 +20,11 @@ use App\Http\Controllers\UserController;
 
 Route::view('/', 'pages.index');
 
+//Route::get('/', [userController::class, 'getAll']);
+
 Route::get('/welcome', [userController::class, 'getUsers']);
 
 Route::get('/users', [userController::class, 'getUsers']);
-
 
 /* Utilitzant regex per validar les dades que pasen per la url
 Route::get('/user/{name}', function($name) {
