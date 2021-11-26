@@ -15,7 +15,9 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/', [userController::class, 'index']);
+
+Route::view('/', 'index');
+Route::get('/users', [userController::class, 'getUsers']);
 
 
 /* Utilitzant regex per validar les dades que pasen per la url

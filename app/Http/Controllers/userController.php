@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 
 class userController extends Controller
 {
-    public function index() {
+    public function getUsers() {
         $users = DB::select('select * from users');
         foreach ($users as $user) {
             echo $user->userId;
