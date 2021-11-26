@@ -3,7 +3,7 @@
        <a id="logo" href="/">Single Malt</a>
        <ul class="nav">
            <li><a href="/">Home</a></li>
-           <li><a href="/users">Print users</a></li>
+           <li><a href="/welcome">Print users</a></li>
        </ul>
    </div>
 </div>

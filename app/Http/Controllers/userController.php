@@ -9,6 +9,6 @@ class userController extends Controller
 {
     public function getUsers() {
         $data = DB::select('select * from users');
-        return view('pages.index', compact('data'));
+        return view('pages.welcome', compact('data'));
     }
 }
