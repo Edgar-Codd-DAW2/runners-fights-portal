@@ -16,7 +16,10 @@ use App\Http\Controllers\UserController;
 */
 
 
-Route::view('/', 'index');
+//Route::view('/', 'index');
+
+Route::get('/', [userController::class, 'getUsers']);
+
 Route::get('/users', [userController::class, 'getUsers']);
 
 

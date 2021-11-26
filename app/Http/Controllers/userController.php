@@ -8,13 +8,7 @@ use Illuminate\Support\Facades\DB;
 class userController extends Controller
 {
     public function getUsers() {
-        $users = DB::select('select * from users');
-        foreach ($users as $user) {
-            echo $user->userId;
-            echo " ";
-            echo $user->userName;
-            echo " ";
-            echo $user->password;
-        } 
+        $data = DB::select('select * from users');
+        return view('pages.index', compact('data'));
     }
 }
