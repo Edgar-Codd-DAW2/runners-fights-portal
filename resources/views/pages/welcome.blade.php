@@ -1,14 +1,31 @@
 @extends('layouts.default')
 @section('content')
 
-Get listst of Users: 
-@foreach ($data as $user)
-   <p>{{ $user->userId }}</p>
-   <p>{{ $user->userName }}</p>
-   <p>{{ $user->password }}</p>
-   <p>{{ $user->money }}</p>
-   <p>{{ $user->points }}</p>
-
+<table class="table table-responsive-xl table-hover mt-1">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">ID</th>
+      <th scope="col">User Name</th>
+      <th scope="col">Password</th>
+      <th scope="col">Money</th>
+      <th scope="col">Points</th>
+    </tr>
+  </thead>
+  <tbody>
+  @foreach ($data as $user)
+  <tr>
+     <th scope="row">{{$loop->index}}</th>
+     <th>{{ $user->userId }}</th>
+     <th>{{ $user->userName }}</th>
+     <th>{{ $user->password }}</th>
+     <th>{{ $user->money }}</th>
+     <th>{{ $user->points }}</th>
+  </tr>
    @endforeach
+    
+  </tbody>
+</table>
 
-   @stop
+
+@stop
