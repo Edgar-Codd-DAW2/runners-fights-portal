@@ -13,6 +13,12 @@ Los comandos necesarios para que os funcione la web.
 
 - **npm install**
 
+- **cp .env.example .env**
+
+- cambiar la linea 12 i poner **login_db**
+
+- Abrir **XAMPP** activar Apache y MySQl. Pulsar en **Admin* de MySQL. Crear una nueva BBDD llamada login_db
+
 ## Para lanzar la app en local:
 
 **php artisan serve** 
