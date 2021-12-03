@@ -6,7 +6,6 @@
 <body>
         @include('includes.header')
         @yield('content')
-        @include('includes.footer')
-</div>
+        @include('includes.footer') 
 </body>
 </html>

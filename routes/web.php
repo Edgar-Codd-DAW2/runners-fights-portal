@@ -33,9 +33,6 @@ Route::get('/user/{name}', function($name) {
 
 })->where('name', '[A-Za-z]+');
 */
-//Auth::routes();
-
-//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
 
