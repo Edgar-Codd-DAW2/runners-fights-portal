@@ -24,8 +24,6 @@ Route::view('/', 'pages.index');
 
 Route::get('/welcome', [UserController::class, 'getUsers']);
 
-Route::get('/users', [UserController::class, 'getUsers']);
-
 Route::get('/users', [UserController::class, 'login']);
 
 /* Utilitzant regex per validar les dades que pasen per la url
