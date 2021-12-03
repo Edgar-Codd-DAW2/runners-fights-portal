@@ -22,11 +22,11 @@ Route::view('/', 'pages.index');
 
 //Route::get('/', [userController::class, 'getAll']);
 
-Route::get('/welcome', [userController::class, 'getUsers']);
+Route::get('/welcome', [UserController::class, 'getUsers']);
 
-Route::get('/users', [userController::class, 'getUsers']);
+Route::get('/users', [UserController::class, 'getUsers']);
 
-Route::get('/users', [userController::class, 'login']);
+Route::get('/users', [UserController::class, 'login']);
 
 /* Utilitzant regex per validar les dades que pasen per la url
 Route::get('/user/{name}', function($name) {
