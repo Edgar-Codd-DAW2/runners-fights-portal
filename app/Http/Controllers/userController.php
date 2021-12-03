@@ -9,7 +9,7 @@ use App\Models\Users;
 class userController extends Controller
 {
     public function getUsers() {
-        $data = Users::all();
+        $data = User::all();
         return view('pages.welcome', compact('data'));
     }
 }

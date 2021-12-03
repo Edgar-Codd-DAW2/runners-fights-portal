@@ -26,11 +26,17 @@ Route::get('/welcome', [userController::class, 'getUsers']);
 
 Route::get('/users', [userController::class, 'getUsers']);
 
+Route::get('/users', [userController::class, 'login']);
+
 /* Utilitzant regex per validar les dades que pasen per la url
 Route::get('/user/{name}', function($name) {
 
 })->where('name', '[A-Za-z]+');
 */
+//Auth::routes();
+
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
