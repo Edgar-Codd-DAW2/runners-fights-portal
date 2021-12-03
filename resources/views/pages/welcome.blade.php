@@ -6,7 +6,7 @@
     <tr>
       <th scope="col">#</th>
       <th scope="col">ID</th>
-      <th scope="col">User Name</th>
+      <th scope="col">Name</th>
       <th scope="col">Password</th>
       <th scope="col">Money</th>
       <th scope="col">Points</th>
@@ -16,10 +16,9 @@
   @foreach ($data as $user)
   <tr>
      <th scope="row">{{$loop->index}}</th>
-     <th>{{ $user->userId }}</th>
-     <th>{{ $user->userName }}</th>
-     <th>{{ $user->password }}</th>
-     <th>{{ $user->money }}</th>
+     <th>{{ $user->name }}</th>
+     <th>{{ $user->email }}</th>
+     <th>{{ $user->points }}</th>
      <th>{{ $user->points }}</th>
   </tr>
    @endforeach
