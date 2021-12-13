@@ -22,7 +22,7 @@ Route::view('/', 'pages.index');
 
 //Route::get('/', [userController::class, 'getAll']);
 
-Route::get('/welcome', [UserController::class, 'getUsers']);
+Route::get('/welcome', function() {echo 'testint';}); // [UserController::class, 'getUsers']);
 
 Route::get('/users', [UserController::class, 'login']);
 
